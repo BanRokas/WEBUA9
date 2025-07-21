@@ -1,0 +1,5 @@
+CAO:
+  Skaityti ir žiūrėti video:
+    Pamoka 1 - Įžanga į HTML
+  Daryti:
+    Praktika: Kuriame paprastą puslapį su HTML

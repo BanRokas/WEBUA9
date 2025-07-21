@@ -1,37 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mano pirmoji svetainė!</title>
-  </head>
-  <body>
-    <h1>Antraštė 1</h1>
-    <h2>Antraštė 2</h2>
-    <h3>Antraštė 3</h3>
-    <h4>Antraštė 4</h4>
-    <h5>Antraštė 5</h5>
-    <h6>Antraštė 6</h6>
-    <p>
-      HTML - <i>HyperText</i> <b>Markup</b> <span>Language</span>
-    </p>
-    <img src="https://aquitainevet.com/wp-content/uploads/2018/06/aquitaine-kittens.jpg" alt="Maži katinukai žaidžia pievoje" width="300px" height="auto"><hr>
-    <img src="./images/attribute.PNG" alt="what is an attribute"><br>
-    <a href="https://www.google.lt" target="_blank">Ant kažkokio teksto</a>
-    <p>
-      Labas rytas Lietuva! Sekite mūsų naujienas <a href="https://lrytas.lt" target="_blank">čia</a> su galimybe registruotis naujienlaiškiui!
-    </p>
-    <button><a href="https://15min.lt">Paspausk ant manęs!</a></button>
-    <h4>HTML tag'ai</h4>
-    <ul>
-      <li></li>
-    </ul>
-    <h4>HTML atributai</h4>
-    <ul>
-      <li></li>
-    </ul>
-    <h4>Klaviatūros trumpiniai</h4>
-    <ul>
-      <li></li>
-    </ul>
-  </body>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mano pirmoji svetainė!</title>
+
+  <style>
+    section{
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      > div{
+        > h4{
+          text-align: center;
+          color: red;
+          font-size: 24px;
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Antraštė 1</h1>
+  <h2>Antraštė 2</h2>
+  <h3>Antraštė 3</h3>
+  <h4>Antraštė 4</h4>
+  <h5>Antraštė 5</h5>
+  <h6>Antraštė 6</h6>
+  <p>
+    HTML - <i>HyperText</i> <b>Markup</b> <span>Language</span>
+  </p>
+  <img src="https://aquitainevet.com/wp-content/uploads/2018/06/aquitaine-kittens.jpg"
+    alt="Maži katinukai žaidžia pievoje" width="300px" height="auto">
+  <hr>
+  <img src="./images/attribute.PNG" alt="what is an attribute"><br>
+  <a href="https://www.google.lt" target="_blank">Ant kažkokio teksto</a>
+  <p>
+    Labas rytas Lietuva! Sekite mūsų naujienas <a href="https://lrytas.lt" target="_blank">čia</a> su galimybe
+    registruotis naujienlaiškiui!
+  </p>
+  <button><a href="https://15min.lt">Paspausk ant manęs!</a></button>
+  <section>
+    <div>
+      <h4>HTML tag'ai</h4>
+      <ul>
+        <li>html - grupuoja head ir body tag'us</li>
+        <li>head - meta info apie puslapį</li>
+        <li>body - turinys, kuris atvaizduojamas vartotojui</li>
+        <li>header, nav, main, section, article, div, footer - semantiniai tag'ai</li>
+        <li>meta - meta informacijai nurodyti</li>
+        <li>title - puslapio pavadinimas</li>
+        <li>h1-h6 - heading - antraštė</li>
+        <li>p - paragraph - paragrafas</li>
+        <li>img - image - paveiksliukas</li>
+        <li>i - italic - suteikia tekstui pasvyrimą</li>
+        <li>b - bold - suteikia tekstui paryškinimą</li>
+        <li>span - tuščias linijinis tag'as skirtas apgaubti tekstinį turinį</li>
+        <li>a - anchor - nuoroda</li>
+        <li>button - mygtukas</li>
+        <li>br - line break - eilutės lūžis</li>
+        <li>hr - thematic line break - eilutės lūžis su brūkšneliu</li>
+        <li>ul - unordered list - nerikiuotas sąrašas</li>
+        <li>ol - ordered list - rikiuotas sąrašas</li>
+        <li>li - list item - sąrašo elementas</li>
+        <li>table</li>
+        <li>form</li>
+      </ul>
+    </div>
+    <div>
+      <h4>HTML atributai</h4>
+      <ul>
+        <li>src - source - šaltinis/nuoroda</li>
+        <li>alt - alternative text - tekstas, kuris atvaiduojamas vietoj paveiksliuko</li>
+        <li>width - plotis</li>
+        <li>height - aukštis</li>
+        <li>href - hyperlink reference - nuoroda</li>
+        <li>target - kur bus atidaroma nuoroda</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Klaviatūros trumpiniai</h4>
+      <ul>
+        <li>CTRL A - viską parinkti</li>
+        <li>CTRL ENTER - naujos eilutės sukūrimas</li>
+        <li>ALT TAB - vaikščiojimas tarp atidarytų programų</li>
+        <li>CTRL Z - atšaukia paskutinį veiksmą</li>
+        <li>CTRL Y - atvirkščias CTRL Z</li>
+        <li>CTRL F - atidaromas paieškos laukas</li>
+        <li>CTRL D - multi selektina parinkties duplikatus</li>
+        <li>ALT mouseClick - sukuria papildomus kursorius</li>
+        <li>CTRL / - parinktų eilučių komentavimas</li>
+        <li>CTRL T - sukuriamas naujas tab'as (svetainėje)</li>
+        <li>ALT Z - toggle'ina word wrap</li>
+        <li>SHIFT ALT DOWN/UP - parinktų eilučių duplikavimas žemyn/aukštyn</li>
+        <li>SHIFT ALT F - automatinis tabuliavimas</li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+<script>
+  let clickCounter = 0;
+  document.querySelector('button').addEventListener('click', () => {
+    console.log(++clickCounter);
+  });
+</script>
 </html>
