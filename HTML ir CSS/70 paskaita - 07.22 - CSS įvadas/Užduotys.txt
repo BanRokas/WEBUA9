@@ -1,0 +1,10 @@
+CAO:
+  Skaityti:
+    Pamoka 2 Įžanga į CSS
+    Pamoka 3 Daugiau apie HTML ir CSS bei naršyklės įrankius
+  Daryti:
+    Pamoka 2 Įžanga į CSS
+    Nebūtina - Pamoka 3 Daugiau apie HTML ir CSS bei naršyklės įrankius
+
+Rokas:
+  Naudodami šiandieną išmoktus stilius pabandykite sukurti elementų struktūras, ir jom suteikus atitinkamus stilius pavaizduokite 2-4 skirtingų šalių vėliavas (paprastas kur spalvos yra juostos)
