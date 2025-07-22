@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>70 paskaita - CSS Įvadas</title>
+
+  <style>
+    body{
+      background-color: #7b7b7b;
+    }
+    li{
+      color: orange;
+    }
+  </style>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header>
+    <nav></nav>
+  </header>
+  <main>
+    <section> <!-- CSS Pagrindai -->
+      <h2>CSS Pagrindai</h2>
+      <p style='font-style:italic; color: red'>
+        CSS - Cascading Style Sheets - pakopiniai stiliaus šablonai yra naudojami norint stilizuoti HTML elementus.
+      </p>
+      <h3>CSS rašymo būdai</h3>
+      <ul>
+        <li>Inline - linijinis - tag'ui priskiriame atributą style ir jo reikšmės viduje rašome stilius.</li>
+        <li>Internal - vidinis - CSS rašomas HTML faile, style tag'o viduje.</li>
+        <li>External - išorinis - CSS rašomas atskirame faile, kurį reikia prijungti prie HTML.</li>
+      </ul>
+    </section>
+    <section> <!-- CSS Selektoriai -->
+      <h2>CSS Selektoriai</h2>
+      <p>
+        CSS selektorius - būdas parinkti kokiam HTML elementui norime priskirti toliau rašomus stilius.
+      </p>
+      <h3>Selektorių sąrašas</h3>
+      <ul>
+        <li>tag - p/h1/section/... - yra parenkami visi nurodyti tag'ai</li>
+        <li>* - visko selektorius - parenka visus elementus</li>
+        <li class="mazytesRaides raudonasTekstas">.klasesVardas - klases selektorius - parenka elementus, kuriems yra priskirtas nurodytas klasesVardas</li>
+        <li id="svarbusListItem" class="melynasTekstas">#idVardas - id selektorius - parenka elementą, kuriam yra priskirtas nurodytas idVardas</li>
+        <li>...</li>
+      </ul>
+    </section>
+    <section> <!-- Spalvos -->
+      <h2>
+        <a href="https://htmlcolorcodes.com/" target="_blank">Spalvos</a>
+      </h2>
+      <ul>
+        <li>Spalvų pavadinimai (tik apie 140)</li>
+        <li>RGB - red green blue, nuo 0 iki 255</li>
+        <li>RGBA - red green blue ir alpha, alpha - nuo 0 iki 1, 0.001 žingsniu - skirtas nurodyti spalvos permatomumą</li>
+        <li>HEX - hexdecimal - šešioliktainė nuo 0 iki f - trims RGB spalvoms</li>
+        <li>HSL - hue saturation lightness</li>
+      </ul>
+    </section>
+    <section> <!-- Fonai -->
+      <h2>Fonai</h2>
+      <div class="fonas vientisaSpalva"></div>
+      <div class="fonas pereinancios_Spalvos"></div>
+      <div class="fonas fiksuotasPaveiksliukas"></div>
+      <div class="fonas paveiksliukoFonas"></div>
+    </section>
+    <section> <!-- Display -->
+      <h2>Display</h2>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

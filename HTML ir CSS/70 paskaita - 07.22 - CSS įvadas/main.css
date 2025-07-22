@@ -1,0 +1,59 @@
+h2{
+  text-align: center;
+  font-size: 2rem;
+  color: green;
+  text-shadow: -1px -1px 5px red;
+}
+
+/* *{
+  border: 3px dashed purple;
+} */
+
+.mazytesRaides{
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.raudonasTekstas{
+  color: red;
+}
+
+#svarbusListItem{
+  font-size: larger;
+  color: red;
+  text-decoration: underline;
+}
+
+.melynasTekstas{
+  color: #0000ff;
+}
+
+.fonas{
+  height: 500px;
+}
+.vientisaSpalva{
+  background-color: #7daa7d;
+}
+.pereinancios_Spalvos{
+  /* radial-gradient */
+  background-image: linear-gradient(
+    to bottom,
+    yellow 33%,
+    green 33% 66%,
+    red 66%
+  );
+}
+.fiksuotasPaveiksliukas{
+  background-image: url('./images/nature3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.paveiksliukoFonas{
+  background-image: url('./images/nature2.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+}
