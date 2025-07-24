@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <header></header>
+  <header>Headeris</header>
   <main>
-    <section> <!-- Daugiau CSS Selektorių -->
+    <section class=""> <!-- Daugiau CSS Selektorių -->
       <h2>Daugiau CSS Selektorių</h2>
       <ul class="bigList">
         <li>kombinacijos
@@ -28,7 +28,7 @@
         <li>...</li>
       </ul>
     </section>
-    <section> <!-- CSS Stilių pritaikymo taisyklės -->
+    <section class=""> <!-- CSS Stilių pritaikymo taisyklės -->
       <h2>CSS Stilių pritaikymo taisyklės</h2>
       <div>
         <h3>Naršyklės numatytieji stiliai</h3>
@@ -74,8 +74,8 @@
           <li>Inheritance - Paveldėjimas</li>
         </ol>
       </div>
-    </section>
-    <section> <!-- Dėžutės Modelis -->
+    </section class="">
+    <section class=""> <!-- Dėžutės Modelis -->
       <h2>Dėžutės Modelis</h2>
       <ol>
         <li>Content - turinys - centrinė dalis</li>
@@ -90,8 +90,24 @@
     </section>
     <section> <!-- Ilgio vienetai -->
       <h2>Ilgio vienetai</h2>
+      <div>
+        <h3>Absoliutūs vienetai</h3>
+        <p>
+          Iš absoliučiųjų matavimo vienetų aktualus ir dažniausiai naudojamas yra "px" vienetas, kuris nurodo ekrane esančio pikselio dydį.
+        </p>
+      </div>
+      <div style="width: 1000px">
+        <h3 style="width: 50%">Santykiniai vienetai</h3>
+        <ul>
+          <li>% - procentas - 1/100 dalis tėvinio elemento dydžio</li>
+          <li>vh - viewport height - matomo ekrano (priklausomai nuo vartotojo įrenginio) aukštis</li>
+          <li>vw - viewport width - matomo ekrano (priklausomai nuo vartotojo įrenginio) plotis</li>
+          <li>em - atsižvelgia į tėvinio elemento dydį ir pagal jį pritaiko dydį nurodytam elementui.</li>
+          <li>rem - root em - atsižvelgia į šakninius nustatymus ir pagal juos pritaiko dydį nurodytam elementui. (default 16px)</li>
+        </ul>
+      </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>Footeris</footer>
 </body>
 </html>
