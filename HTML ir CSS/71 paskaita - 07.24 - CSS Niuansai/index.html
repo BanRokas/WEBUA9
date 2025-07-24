@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>71 paskaita - CSS Niuansai</title>
+  <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Daugiau CSS Selektorių -->
+      <h2>Daugiau CSS Selektorių</h2>
+      <ul class="bigList">
+        <li>kombinacijos
+          <ul>
+            <li>tagName.className</li>
+            <li>.className.className2</li>
+            <li>tagName#idName.className</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li class="selectorTest">selector1 selector2 (all descendant elements)</li>
+        <li>selector1 > selector2 (next descendant element)</li>
+        <li>selector1 + selector2 (next sibling element)</li>
+        <li>selector1 ~ selector2 (all further sibling elements)</li>
+        <li>...</li>
+      </ul>
+    </section>
+    <section> <!-- CSS Stilių pritaikymo taisyklės -->
+      <h2>CSS Stilių pritaikymo taisyklės</h2>
+      <div>
+        <h3>Naršyklės numatytieji stiliai</h3>
+        <p>
+          Didžioji dalis tag'ų turi kažkokius tais numatytuosius naršyklės stilius, kurie gali minimalistiškai skirtis tarp skirtingų naršyklių.
+        </p>
+        <p>
+          <a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target="_blank">Normalize CSS</a> - normalizuoja tuos galimai minimalistiškus stilių skirtumus tarp naršyklių ir panaikina/sugrąžina nenorimus stilius į pradines būsenas.
+        </p>
+        <p>
+          <a href="https://meyerweb.com/eric/tools/css/reset/reset200802.css" target="_blank">Reset CSS</a> - panaikina visus numatytuosius stilius visiems elementams.
+        </p>
+      </div>
+      <div>
+        <h3>Tėviniai ir vaikiniai elementai</h3>
+        <p>
+          Tėvinis elementas GALI turėti daugelį vaikinių elementų.
+        </p>
+        <p>
+          Vaikinis elementas TURI TIK vieną tėvinį elementą.
+        </p>
+      </div>
+      <div>
+        <h3>Paveldėjimas</h3>
+        <p>
+          Vaikinis elementas gali paveldėti stilius (jeigu šie yra paveldimi) iš tėvinio elemento.
+        </p>
+      </div>
+      <div>
+        <h3>CSS stilių prioritetai</h3>
+        <ol>
+          <li>!important - siūloma nenaudoti</li>
+          <li>Inline style - linijinis stilius</li>
+          <li>Selector specificity - Selektoriaus specifikacija
+            <ol>
+              <li>100 - id</li>
+              <li>010 - class</li>
+              <li>001 - tag</li>
+            </ol>
+          </li>
+          <li>Order - Eiliškumas</li>
+          <li>User agent stylesheet - Naršyklės numatytieji stiliai</li>
+          <li>Inheritance - Paveldėjimas</li>
+        </ol>
+      </div>
+    </section>
+    <section> <!-- Dėžutės Modelis -->
+      <h2>Dėžutės Modelis</h2>
+      <ol>
+        <li>Content - turinys - centrinė dalis</li>
+        <li>Padding - pamušalas - tarpelis tarp turinio ir rėmelio</li>
+        <li>Border - rėmelis - linija tarp Padding ir Margin</li>
+        <li>Margin - paraštė - atstumas tarp elemento ir jo aplinkinių elementų</li>
+        <li>Positions</li>
+      </ol>
+      <div class="boxModel">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illum commodi pariatur, deserunt fugit eveniet iure sint incidunt nihil necessitatibus, repellat consequuntur voluptatum eligendi recusandae assumenda. Laboriosam hic mollitia molestiae!
+      </div>
+    </section>
+    <section> <!-- Ilgio vienetai -->
+      <h2>Ilgio vienetai</h2>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
