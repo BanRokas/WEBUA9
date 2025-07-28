@@ -1,0 +1,14 @@
+CAO:
+  Praleisti: Pamoka 6 Multimedijos elementai
+  Skaityti:
+    Pamoka 7 HTML lentelės
+    Pamoka 8 CSS pseudo klasės ir pseudo elementai
+  Daryti:
+    Pamoka 7 HTML lentelės - užtenka TIK lentelę
+    Pamoka 8 CSS pseudo klasės ir pseudo elementai - užtenka TIK lentelę
+
+Rokas:
+  Lentelė:
+    Sukurkite lentelę, kurioje būtų informacija apie 5 jūsų mėgstamiausias vietas (kur norėtumėte nuvykti, kur jau buvote ir t.t.). Informacija apie vietas: Eilės numeris; Pavadinimas; Šalis; Buvau/Nebuvau; Paveiksliukas; Nuoroda;
+  Selectors:
+    Pamėginti https://flukeout.github.io/ iki 26 lygmens
