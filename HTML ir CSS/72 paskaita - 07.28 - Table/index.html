@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>72 paskaita - Table</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Lentelė -->
+      <h2>Lentelė</h2>
+      <ul>
+        <li>table - pagrindinis lentelės tag'as</li>
+        <li>thead - stulpelių pavadinimų laukas</li>
+        <li>tbody - laukas atvaizduoti duomenims</li>
+        <li>tfoot - išvestinė</li>
+        <li>tr - table row - lentelės eilutė</li>
+        <li>th - table heading - stulpelių pavadinimai</li>
+        <li>td - table data - duomens laukas</li>
+        <li>caption - lentelės pavadinimas</li>
+      </ul>
+      <p>
+        Lentelės skirtos atvaizduoti kažkokiai informacijai.<br>
+        Lentelės susideda iš eilučių, kurių viduje kuriami elementai sukuria stulpelius.
+      </p>
+      <table class="testTable">
+        <caption>Asmenys</caption>
+        <thead>
+          <tr>
+            <th>Vardas</th>
+            <th>Miestas</th>
+            <th>Kapitalas</th>
+            <th>Svoris</th>
+            <th>Akių spalva</th>
+            <th>Amžius</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rokas</td>
+            <td>Kaunas</td>
+            <td>10000</td>
+            <td>85</td>
+            <td>Mėlyna</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>Petras</td>
+            <td>Vilnius</td>
+            <td>10000</td>
+            <td>75</td>
+            <td>Ruda</td>
+            <td>32</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" class="alignRight">Amžiaus vidurkis:</td>
+            <td>30</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section> <!-- CSS Nest'inimą -->
+      <h2>CSS Nest'inimą</h2>
+      <p>
+        CSS selektorius galima nest'inti. Vieno selektoriaus viduje, galime rašyti kitą selektorių, šitaip išvengdami tų pačių selektorių kartojimo.
+      </p>
+    </section>
+    <section> <!-- Pseudo Klasių selektoriai -->
+      <h2>
+        <a href="https://www.w3schools.com/cssref/css_ref_pseudo_classes.php" target="_blank">Pseudo Klasių selektoriai</a>
+      </h2>
+      <p>
+        Dalis pseudo klasių reaguoja į kažkokius tais vartotojo veiksmus.<br>
+        Dalis pseudo klasių gali kažkaip kitaip stilizuoti elementus priklausomai nuo jų pozicijos.
+      </p>
+      <ul class="testList">
+        <li>Nuorodos (a - anchor)
+          <ol>
+            <li>:link - nelankyta nauja nuoroda</li>
+            <li>:visited - lankyta nuoroda</li>
+            <li>:hover - reaguoja į pelės užvedimą ant elemento (NE TIK su nuorodomis)</li>
+            <li>:active - reaguoja į paspaudimo momentą / aktyvią navigacinę nuorodą</li>
+          </ol>
+        </li>
+        <li>:first-child</li>
+        <li>:last-child</li>
+        <li>:first-of-type</li>
+        <li>:last-of-type</li>
+        <li>:nth-child(n)</li>
+        <li>:nth-last-child(n) - tas pats kas nth-child(n), tik iš kito galo</li>
+        <li>:nth-of-type(n)</li>
+        <li>:nth-last-of-type(n)</li>
+        <li>Nebūtina:
+          <ul>
+            <li>:root</li>
+            <li>:not(selector)</li>
+            <li>:empty</li>
+            <li>:fullscreen</li>
+            <li>:lang(language)</li>
+            <li>:target</li>
+            <li>:is()</li>
+            <li>:has()</li>
+            <li>:where()</li>
+          </ul>
+        </li>
+        <li>...</li>
+      </ul>
+    </section>
+    <section> <!-- Pseudo Elementų selektoriai -->
+      <h2>
+        <a href="https://www.w3schools.com/cssref/css_ref_pseudo_elements.php" target="_blank">Pseudo Elementų selektoriai</a>
+      </h2>
+      <p>
+        Pseudo Elementų selektoriai - parenka dalį turinio, kurio įprastai negali pasiekti / pats nerašai / sukuria papildomą turinį / daro dar kažką keisto...
+      </p>
+      <ul>
+        <li>::before - sukuria turinį prieš elementą</li>
+        <li>::after - sukuria turinį po elemento</li>
+        <li>...</li>
+      </ul>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

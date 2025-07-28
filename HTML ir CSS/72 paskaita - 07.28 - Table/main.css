@@ -1,0 +1,71 @@
+/* table.testTable th{
+  border: 1px solid black;
+  padding: 2px 5px;
+}
+table.testTable td{
+  border: 1px solid black;
+  padding: 2px 5px;
+} */
+/* table.testTable{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table.testTable th, table.testTable td{
+  border: 1px solid black;
+  padding: 2px 5px;
+} */
+table.testTable{
+  border: 1px solid black;
+  border-collapse: collapse;
+
+  th, td{
+    border: 1px solid black;
+    padding: 2px 5px;
+  }
+}
+
+.alignRight{
+  text-align: right;
+}
+
+a:link{
+  background-color: #78f6cc;
+}
+a:visited{
+  background-color: #de83bb;
+}
+a:hover{
+  background-color: green;
+}
+a:active{
+  background-color: red;
+  color: greenyellow;
+}
+
+p:hover{
+  color: red;
+  font-size: larger;
+}
+
+ul.testList{
+
+  /* > :first-child{
+    color: green;
+  }
+  > :last-child{
+    color: orange;
+  } */
+  > :nth-child(2n+1){
+    color: green;
+  }
+}
+
+li::before{
+  content: ":)";
+  color: red;
+  font-size: 32px;
+  font-style: italic;
+}
+li:hover::before{
+  content: ":(";
+}
