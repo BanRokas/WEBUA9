@@ -21,4 +21,34 @@ form.testForm{
       }
     }
   }
+  :required{
+    border: 2px solid red;
+  }
+  :optional{
+    border: 2px solid green;
+  }
+  :optional+label{
+    border: 2px solid green;
+  }
+  :focus{
+    font-size: 20px;
+  }
+}
+
+li::marker{
+  color: red;
+}
+::selection{
+  color: orange;
+  background-color: black;
+}
+
+::-webkit-scrollbar{
+  background-color: aqua;
+  width: 20px;
+  border-radius: 30% / 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: orangered;
+  border-radius: 30% / 5px;
 }

@@ -1,0 +1,13 @@
+CAO:
+  Praleisti:
+    Pamoka 6 Multimedijos elementai
+  Skaityti:
+    Pamoka 9 HTML Formos
+    Pamoka 10 CSS user-action pseudo klasės
+  Daryti:
+    Pamoka 9 HTML Formos (nebūtina fono)
+    Pamoka 10 CSS user-action pseudo klasės
+
+Rokas:
+  Pabandyti atkartoti ./images/form2.png
+  Arba bent jau atkartoti tos formos custom input'ų lauką
