@@ -1,0 +1,24 @@
+form.testForm{
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 5px;
+
+  border: 2px dashed black;
+
+  > fieldset{
+
+    > div{
+      display: inline-block;
+
+      > input{
+        display: none;
+      }
+      > input+label{
+        background-color: grey;
+      }
+      > input:checked+label{
+        background-color: green;
+      }
+    }
+  }
+}

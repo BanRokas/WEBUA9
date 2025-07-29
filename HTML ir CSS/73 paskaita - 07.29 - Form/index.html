@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>73 paskaita - Form</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Form -->
+      <h2>Form</h2>
+      <p>
+        Formos naudojamos norint atvaizduoti vartotojams lauką, skirtą suvesti kažkokiai informacijai (prisijungimas, registracija, žinutės siuntimas, bilietų pirkimas...), kuri po to gali būti pateikiama ir pagal įvestus duomenis - sugeneruojamas atsakymas.
+      </p>
+      <div>
+        <h3>Formos tag'ai</h3>
+        <ul>
+          <li>form</li>
+          <li>label</li>
+          <li>input - turi DAUG variacijų</li>
+          <li>textarea</li>
+          <li>select</li>
+          <li>option</li>
+          <li>datalist</li>
+          <li>optgroup</li>
+          <li>output</li>
+          <li>fieldset</li>
+          <li>legend</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Formos tag'ų atributai</h3>
+        <ul>
+          <li>type - nustato kokio tipo bus įvestis
+            <ul>
+              <li>text - teksto įvestis</li>
+              <li>number - skaičiaus įvestis</li>
+              <li>range - skaičiaus įvestis (slider)</li>
+              <li>password - slaptažodžio įvestis</li>
+              <li>email - el pašto įvestis</li>
+              <li>url - nuorodos įvestis</li>
+              <li>file - failo įkelimo įvestis</li>
+              <li>datetime-local - data ir laikas</li>
+              <li>color - spalvos pasirinkimas</li>
+              <li>radio - vienas iš pasirinkimų</li>
+              <li>checkbox - keletas iš pasirinkimų</li>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>for - apjungia label su input</li>
+          <li>id - apjungia input su label</li>
+          <li>name - suteikia įvesčiai arba įvesčių grupei pavadinimą</li>
+          <li>placeholder - parodomoji įvestis</li>
+          <li>minlength - minimalus įvesties ilgis</li>
+          <li>maxlength - maksimalus įvesties ilgis</li>
+          <li>required - privalomas įvesties laukas</li>
+          <li>selected - iš anksto parinkta opcija</li>
+          <li>disabled - neleistina pasirinkti opcija</li>
+          <li>min - minimalus skaičius/data</li>
+          <li>max - maksimalus skaičius/data</li>
+          <li>step - skaičiaus žingsnis (kiek už kablelio)</li>
+          <li>accept - kokio tipo failus rodys atidarytame lange</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Pavyzdinė Forma</h3>
+        <form class="testForm">
+          <div> <!-- input:text -->
+            <!-- <label for="username">Slapyvardis:</label> -->
+            <input
+              type="text"
+              name="username" id="username"
+              placeholder="Įveskite savo slapyvardį..."
+              minlength="5" maxlength="21"
+            >
+          </div>
+          <div> <!-- textarea -->
+            <label for="comment">Jūsų atsiliepimas:</label>
+            <textarea name="comment" id="comment"></textarea>
+          </div>
+          <div> <!-- select -->
+            <!-- <label for="city">Jūsų miestas:</label> -->
+            <select name="city" id="city">
+              <option disabled selected>Jūsų miestas</option>
+              <option value="Kaunas">Kaunas</option>
+              <option value="Vilnius">Vilnius</option>
+              <option value="Klaipėda">Klaipėda</option>
+              <option value="Telšiai">Telšiai</option>
+            </select>
+          </div>
+          <div> <!-- input:number -->
+            <label for="age">Jūsų amžius</label>
+            <input
+              type="number"
+              name="age" id="age"
+              min="18" max="99"
+              step="0.01"
+            >
+          </div>
+          <div> <!-- input:file -->
+            <label for="profilePicture">Profilio nuotrauka</label>
+            <input
+              type="file"
+              name="profilePicture" id="profilePicture"
+              accept="image/png, image/jpg, image/jpeg"
+            >
+          </div>
+          <div> <!-- input:datetime-local -->
+            <label for="dob">Gimimo data</label>
+            <input
+              type="date"
+              name="dob" id="dob"
+              min="1926-01-01" max="2007-07-29"
+            >
+          </div>
+          <fieldset> <!-- input:radio -->
+            <legend>Pasirinkite lytį:</legend>
+            <div>
+              <input
+                type="radio"
+                name="gender" id="male"
+                value="Vyras"
+              >
+              <label for="male">Vyras</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="gender" id="female"
+                value="Moteris"
+              >
+              <label for="female">Moteris</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Mėgstami žanrai</legend>
+            <div>
+              <input
+                type="checkbox"
+                name="genres" id="action"
+                value="Veiksmo"
+              >
+              <label for="action">Veiksmo</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="genres" id="comedy"
+                value="Komedija"
+              >
+              <label for="comedy">Komedija</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="genres" id="animation"
+                value="Animacija"
+              >
+              <label for="animation">Animacija</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="genres" id="romance"
+                value="Romantiniai"
+              >
+              <label for="romance">Romantiniai</label>
+            </div>
+          </fieldset>
+          <input type="submit" value="Pateikti formą">
+        </form>
+      </div>
+    </section>
+    <section> <!-- Pseudo Klasės -->
+      <h2>Pseudo Klasės</h2>
+    </section>
+    <section> <!-- Pseudo Elementai -->
+      <h2>Pseudo Elementai</h2>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
