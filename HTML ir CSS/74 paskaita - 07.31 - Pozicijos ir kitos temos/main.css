@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+html{
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 600;
+}
+
+.fonasSuTekstu{
+  /* background-color: antiquewhite; */
+  background-image: url("./images/nature5.jpg");
+  border: 2px solid black;
+  position: relative;
+
+  > div{
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1;
+    > h3{
+      text-align: center;
+      font-size: 40px;
+    }
+    > p{
+      text-align: justify;
+      font-size: 32px;
+    }
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    /* display: block;
+    width: 100%;
+    height: 500px; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(210, 97, 56, 0.334);
+  }
+}
+
+.bigRedIcon{
+  font-size: 50px;
+  color: red;
+}
+
+[title~="YouTube"]{
+  border: 5px solid black;
+  padding: 20px;
+}

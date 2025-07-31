@@ -1,0 +1,8 @@
+CAO:
+  Perskaityti:
+    Pamoka 6 Multimedijos elementai
+  Padaryti:
+    Pamoka 6 Multimedijos elementai - nebūtina padaryti šoninės skilties šone. Jeigu norite ją daryti šone - reikės su relative pozicija atitraukti nuo krašto ir su absolute/fixed pozicija pristumti prie krašto.
+
+Rokas:
+  Pasibaigti https://flukeout.github.io/

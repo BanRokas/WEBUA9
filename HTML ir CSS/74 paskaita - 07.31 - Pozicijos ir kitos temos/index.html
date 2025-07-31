@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>74 paskaita - Pozicijos ir kitos temos</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Pozicijos -->
+      <h2>Pozicijos</h2>
+      <p>
+        Pozicijos naudojamos norint suteikti elementams tam tikras savybes, kad šie galėtų: išeiti iš puslapio tėkmės, prilipti kažkurioje ekrano vietoje arba tiesiog šiek tiek pajudėti iš savo originaliosios pozicijos.
+      </p>
+      <ul>
+        <li>static - statinė - nieko nedaro (numatytoji)</li>
+        <li>relative - relatyvioji</li>
+        <li>absolute - absoliučioji</li>
+        <li>fixed - fiksuotoji</li>
+        <li>sticky - lipnioji</li>
+        <li>top, right, bottom, left, z-index (ne pozicijos)</li>
+      </ul>
+      <p>
+        Elementai, kuriems yra suteikiamos: relative / absolute / fixed / sticky pozicijos - gauna prieigą prie top, right, bottom ir left nustatymų, kurie su kiekviena pozicija elgiasi savitai.<br>
+        Taip pat yra įgaunama ir z-index savybė, kuri kontroliuoja elemento sluoksnį ekrane.
+      </p>
+      <div>
+        <h3>Relatyvioji</h3>
+        <p>
+          Top, right, bottom ir left savybės pajudina elementą nuo atitinkamos kraštinės per nurodytą atstumą.
+        </p>
+        <p>
+          Elementas turintis relatyviąją poziciją - taip pat nurodo ribas jo viduje esančiam absoliučiąjam elementui.
+        </p>
+      </div>
+      <div>
+        <h3>Absoliučioji</h3>
+        <p>
+          Elementas turintis absoliučiąją poziciją - jis praranda savo vietą puslapio tėkmėje.<br>
+          Top, right, bottom ir left savybės pajudins elementą nuo artimiausio protėvinio elemento kraštinių, kuris turi relatyviąją poziciją.
+        </p>
+      </div>
+      <div>
+        <h3>Fiksuotoji</h3>
+        <p>
+          Elementas turintis fiksuotąją poziciją - jis praranda savo vietą puslapio tėkmėje.<br>
+          Top, right, bottom ir left savybės nusako per kokį atstumą, nuo vartotojo viewport'o elementas bus atsitraukęs. Ir tas elementas NIEKADA iš tos vietos nepajudės (liks ekrane netgi scroll'inant per puslapį).
+        </p>
+      </div>
+      <div>
+        <h3>Lipnioji</h3>
+        <p>
+          Lipnioji pozicija veikia labai panašiai kaip ir fiksuotoji, bet jis nepraranda vietos puslapio tėkmėje ir jis gali prilipti ekrane TIK savo tėvinio elemento ribose.<br>
+          Top, right, bottom ir left savybės nusako per kokį atstumą nuo ekrano krašto elementas prilips.
+        </p>
+      </div>
+      <div class="fonasSuTekstu"> <!-- fonas su tekstu -->
+        <div>
+          <h3>Antraštė</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum nulla magni commodi aliquid iure fugiat, voluptatum ut dolorum consectetur quibusdam consequatur molestiae iusto esse, sed porro suscipit facilis numquam?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section> <!-- Multimedija -->
+      <h2>Multimedija</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13394.072613338793!2d21.197394941102253!3d55.33790280457395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2slt!4v1753977991089!5m2!1sen!2slt" width="600" height="450" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qiyTDxBjmIw?si=6l9RDxA6w7WTANKA" title="YouTubes video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rDGiQJO0s9A" title="kube videosas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <img src="" alt="">
+      <audio src=""></audio>
+      <video src=""></video>
+    </section>
+    <section> <!-- Google Šriftai -->
+      <h2>Google Šriftai</h2>
+      <p>
+        Galima gauti kitokių teksto šriftų iš <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> puslapio.<br>
+        Susirandi norimą šriftą, pridedi jį į krepšelį, nukopijuoji ir į CSS arba HTML įklijuoji nuorodą ir tuomet gali naudoti tą/tuos šriftus.
+      </p>
+    </section>
+    <section> <!-- Ikonos -->
+      <h2>Ikonos</h2>
+      <p>
+        Norint savo puslapyje pridėti ikonas - reikia iš kokios nors ikonų bibliotekos nusikopijuoti ir įsikelti CDN kodą į HTML arba CSS ir tuomet kopijuoti ikonas iš bibliotekos.
+      </p>
+      <p>
+        Norint stilizuoti ikonas - reikia įsivaizduoti, kad jos yra paprastas tekstas. Keisti jų dydį su font-size arba keisti jų spalvą su color.
+      </p>
+      <span class="bi bi-database bigRedIcon"></span>
+      <i class="bi bi-egg-fried"></i>
+    </section>
+    <section> <!-- Atributų selektoriai -->
+      <h2>Atributų selektoriai</h2>
+      <ul>
+        <li>[attribute] - atributo vardas</li>
+        <li>[attribute='value'] - atributo vardas ir reikšmė</li>
+        <li>[attribute*='value'] - atributo vardas ir dalinė reikšmė</li>
+        <li>[attribute~='value'] - atributo vardas ir viena iš reikšmių</li>
+        <li>[attribute|='value'] - atributo vardas ir reikšmė arba reikšmė su brūkšneliu '-'</li>
+        <li>[attribute^='value'] - atributo vardas ir reikšmės pradžia</li>
+        <li>[attribute$='value'] - atributo vardas ir reikšmės pabaiga</li>
+      </ul>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
