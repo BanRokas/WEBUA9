@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>75 paskaita - Flex</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#flex">Flex</a></li>
+        <li><a href="#properties">Savybės</a></li>
+        <li><a href="#test">Pavyzdys</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="flex"> <!-- Flex -->
+      <h2>Flex</h2>
+      <p>
+        Flex savybė leidžia mums kontroliuoti grupę elementų kartu. Galime elementus išdėlioti vieną šalia kito, vieną po kitu ir kontroliuoti tarpus tarp elementų.<br>
+        Flex turi tėvinio elemento (konteinerio) nustatymus (aktualesni) ir vaikinių elementų nustatymus (ne tokie svarbūs (flex nustatymas - sunkus, bet geras)).
+      </p>
+    </section>
+    <section id="properties"> <!-- Flex Savybės -->
+      <h2>Flex Savybės</h2>
+      <div class="flexProperties">
+        <div>
+          <h3>Tėviniai</h3>
+          <ul>
+            <li>display: flex;</li>
+            <li>flex-direction: row (default) | column | row-reverse | column-reverse;</li>
+            <li>flex-wrap: no-wrap (default) | wrap | wrap-reverse;</li>
+            <li>flex-flow: flex-direction flex-wrap;</li>
+            <li>column-gap: ?px;</li>
+            <li>row-gap: ?px;</li>
+            <li>gap: column-gap row-gap;</li>
+            <li>justify-content: nurodo kaip elementai turi išsidėstyti main-axis.</li>
+            <li>align-content: nurodo kaip elementai turi išsidėstyti cross-axis. Visas turinys visame konteineryje.</li>
+            <li>align-items: nurodo kaip elementai turi išsidėstyti cross-axis. Esant daugiau eilučių - kiekviena eilutė dėstosi savo zonoje.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Vaikiniai</h3>
+          <ul>
+            <li>order - galimybė keisti elementų išdėstymo tvarką</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+            <li>flex</li>
+            <li>align-self</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="test"> <!-- Flex Pavyzdys -->
+      <h2>Flex Pavyzdys</h2>
+      <div class="testContainer">
+        <!-- div{$}*12 -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6 two lines</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+    <section>
+      <h2>CAO ToDo task</h2>
+      <div class="tasksList">
+        <div class="task">
+          <div>
+            <i class="bi bi-check-circle"></i>
+            <h4>Walk the dog</h4>
+          </div>
+          <div>
+            <i class="bi bi-pencil-square"></i>
+            <i class="bi bi-trash-fill"></i>
+          </div>
+        </div>
+        <div class="task">
+          <div>
+            <i class="bi bi-check-circle hidden"></i>
+            <h4>Take out trash</h4>
+          </div>
+          <div>
+            <i class="bi bi-pencil-square"></i>
+            <i class="bi bi-trash-fill"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
