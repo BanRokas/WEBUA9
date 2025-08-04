@@ -1,0 +1,19 @@
+CAO:
+  Skaityti:
+    Pamoka 11 - CSS Flexbox
+  Daryti:
+    Pamoka 12 - Praktika: Dizaino karpymo uždaviniai naudojant Flexbox
+
+Rokas:
+  Pasitestuokite kaip suteikiant skirtingus stilius išsidėsto elementai, mūsų aprašytame "Flex Pavyzdyje".
+
+  Pažaiskite šiuos online žaidimukus (bent jau Flex Froggy):
+    https://flexboxfroggy.com/ (24 yra sunkus)
+    https://codingfantasy.com/games/flexboxadventure/play
+    http://www.flexboxdefense.com/
+
+  Pažiūrėkite Kevin Powell video apie FlexBox:
+    https://www.youtube.com/watch?v=u044iM9xsWU
+
+  Galite pamėginti atkartoti puslapį atvaizduotą "./images/FlexPage1.PNG".
+    Reikės naudoti vaikinį nustatymą "flex" arba kurti nest'intus flex konteinerius, kad atkartoti korteles.
