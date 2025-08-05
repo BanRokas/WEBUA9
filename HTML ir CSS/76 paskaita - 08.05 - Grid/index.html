@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>76 paskaita - Grid</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Grid -->
+      <h2>Grid</h2>
+      <p>
+        Grid atvaizdavimo sistema leidžia mums sukurti norimo tankumo tinklelį kokiame nors konteineryje (elemente) ir tuomet to tinklelio viduje išdėlioti to konteinerio elementus į atitinkamas vietas.<br>
+        Sukuriame grid'ą nurodydami stulpelių ir/arba eilučių dydžius bei kiekius. Tuomet grid'o viduje sustumdai vaikinius elementus į norimas vietas nusakydamas ties kuria tinkelio vieta elementas turi prasidėti ir ties kuria vieta turi pasibaigti.<br>
+        Grid kaip ir Flex turi daug stilių, kurie skirti tiek tėviniui (konteineriui) elementui, tiek vaikiniams elementams. Taip pat Grid turi naujų matavimo vienetų ir pagalbinių funkcijų.
+      </p>
+    </section>
+    <section> <!-- Grid savybės -->
+      <h2>Grid savybės</h2>
+      <div>
+        <!-- div*3>h3+ul>li -->
+        <div>
+          <h3>Tėviniai savybės</h3>
+          <ul>
+            <li>display: grid;</li>
+            <li>grid-template-columns</li>
+            <li>grid-template-rows</li>
+            <li>grid-template: grid-template-rows / grid-template-columns;</li>
+            <li>grid-template-areas</li>
+            <li>row-gap</li>
+            <li>column-gap</li>
+            <li>gap: row-gap column-gap;</li>
+            <li>grid-auto-flow: row (default) | column | row dense | column dense;</li>
+            <li>align-items</li>
+            <li>justify-items</li>
+            <li>place-items: align-items justify-items;</li>
+            <li>align-content</li>
+            <li>justify-content</li>
+            <li>place-content: align-content justify-content;</li>
+            <li>grid-auto-rows</li>
+            <li>grid-auto-columns</li>
+            <li>grid: grid-template-rows / grid-template-columns / grid-template-areas / grid-auto-rows / grid-auto-columns / grid-auto-flow;</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Vaikiniai savybės</h3>
+          <ul>
+            <li>grid-row-start</li>
+            <li>grid-column-start</li>
+            <li>grid-row-end</li>
+            <li>grid-column-end</li>
+            <li>grid-row: start / end;</li>
+            <li>grid-column: start / end;</li>
+            <li>grid-area: name | grid-row-start / grid-column-start / grid-row-end / grid-column-end;</li>
+            <li>align-self</li>
+            <li>justify-self</li>
+            <li>place-self: align-self justify-self;</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Matavimo vienetai bei funkcijos</h3>
+          <ul>
+            <li>fr - fraction</li>
+            <li>repeat(kiek, ką)</li>
+            <li>span - per kelis stulpelius/eilutes tęsiasi</li>
+            <li>min-content</li>
+            <li>max-content</li>
+            <li>auto</li>
+            <li>fit-content()</li>
+            <li>minmax()</li>
+            <li>min()</li>
+            <li>max()</li>
+            <li>masonry()</li>
+            <li>subgrid()</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section> <!-- Grid pavyzdys -->
+      <h2>Grid pavyzdys</h2>
+      <div class="testGrid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4 two lines</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+      </div>
+    </section>
+    <section> <!-- Grid VS Flex -->
+      <h2>Grid VS Flex</h2>
+      <p>
+        Tiek Grid tiek Flex turinio išdėstymo nustatymai yra labai galingi ir turi įvairių panaudojimo atvejų. Bet vienoje situacijoje reikia naudoti tik vieną iš jų. Kada naudoti Grid, o kada Flex?<br>
+        Flex dažniausiai yra naudojamas kai jo viduje esantys elementai turi būti išdėstyti vienoje dimensijoje (galbūt su wrap'inimu), o Grid naudojamas kai jo viduje esantys elementai turi būti išdėstyti keliose dimensijose. 
+      </p>
+      <div>
+        <div>
+          <h2>Flex</h2>
+          <div class="flexTask blackBox">
+            <div>1</div>
+            <div class="greenBox">
+              <div>2</div>
+              <div class="yellowBox">
+                <div>3</div>
+                <div>4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Grid</h2>
+          <div class="gridTask">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
