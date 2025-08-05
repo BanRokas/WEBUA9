@@ -1,0 +1,16 @@
+CAO:
+  Skaityti:
+    Pamoka 13 CSS Grid
+
+Rokas:
+  Video:
+    flex: https://youtu.be/u044iM9xsWU
+    grid: https://youtu.be/rg7Fvvl3taU
+    flex VS grid: https://youtu.be/3elGSZSWTbM
+  Žaidimai:
+    https://cssgridgarden.com/
+    https://codingfantasy.com/games/css-grid-attack/play (nebūtina)
+  Užduotys:
+    1) Pabandyti atkurti grid1.PNG atvaizduotą grid'ą
+    2) Pabandyti atkurti grid2.PNG atvaizduotą grid'ą
+    3) Pabandyti atkartoti "./media/gridOverlap.png" (galima pažiūrėti grid sistemos linijas "./media/gridOverlapLines.png" jeigu nepavyksta pačiam)
