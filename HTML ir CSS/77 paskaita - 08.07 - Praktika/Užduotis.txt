@@ -1,0 +1,5 @@
+CAO:
+  Nieko
+
+Rokas:
+  Atkartoti vieną iš pasirinktų puslapių "./images/flexGridPages1/2/3.jpg"
