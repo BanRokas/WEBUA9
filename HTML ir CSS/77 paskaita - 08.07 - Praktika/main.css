@@ -1,0 +1,59 @@
+
+
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+  /* padding: 20px 60px; */
+  /* position: fixed; */
+}
+
+main{
+  > section{
+    padding: 20px 60px;
+  }
+  > #hero{
+    height: 60vh;
+    color: white;
+    background-image: url("./images/nature8.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: rgba(170, 175, 182, 63%);
+    }
+    > div{
+      position: relative;
+      z-index: 1;
+      width: 60%;
+      text-align: center;
+
+      > h3{
+        text-transform: uppercase;
+      }
+      > h1{
+        text-transform: uppercase;
+      }
+      > p{
+
+      }
+      > button{
+        text-transform: uppercase;
+      }
+    }
+  }
+}
