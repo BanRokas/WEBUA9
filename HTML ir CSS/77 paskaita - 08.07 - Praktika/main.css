@@ -84,4 +84,49 @@ main{
       }
     }
   }
+  > #blogPosts{
+    background-color: #80cc6c;
+
+    > h2{
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0.3em;
+    }
+    > .horizontalLine{
+      background-color: white;
+    }
+    > .posts{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 200px 200px;
+      gap: 20px;
+      
+      > :first-child{
+        grid-row: span 2;
+      }
+      > div{
+        position: relative;
+        > img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          /* object-position: center; */
+        }
+        > div{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 80px;
+          background-color: rgba(250, 235, 215, 0.386);
+        }
+      }
+    }
+  }
+}
+
+.horizontalLine{
+  width: 50px;
+  height: 3px;
+  margin: 0 auto;
 }
