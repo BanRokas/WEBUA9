@@ -9,13 +9,13 @@ body{
 }
 
 header{
-  /* padding: 20px 60px; */
+  /* padding: 20px 10%; */
   /* position: fixed; */
 }
 
 main{
   > section{
-    padding: 20px 60px;
+    padding: 20px 10%;
   }
   > #hero{
     height: 60vh;
@@ -53,6 +53,34 @@ main{
       }
       > button{
         text-transform: uppercase;
+      }
+    }
+  }
+  > #newOffers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    > .offersImages{
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 2fr 1fr;
+      grid-template-rows: 2fr 3fr 2fr 3fr;
+
+      > div{
+        background-size: cover;
+        background-position: center;
+      }
+      > :nth-child(1){
+        grid-area: 1 / 2 / 3 / 5;
+        background-image: url("./images/cssAward.jpg");
+      }
+      > :nth-child(2){
+        grid-area: 3 / 3 / 5 / 6;
+        background-image: url("./images/notColour.jpg");
+      }
+      > :nth-child(3){
+        grid-area: 2 / 1 / 4 / 4;
+        background-image: url("./images/unfinishedProject.jpg");
       }
     }
   }
