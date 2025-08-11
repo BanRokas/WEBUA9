@@ -1,0 +1,13 @@
+CAO:
+  Skaityti/žiūrėti:
+    Pamoka 14 Responsive Web Design
+    Pamoka 15 Mobile-first dizainas
+  Daryti:
+    Pamoka 14 Responsive Web Design
+    Pamoka 15 Mobile-first dizainas
+
+Rokas:
+  Bandyti atkartoti pateiktus responsive dizainus:
+    1) Pabandyti atkartoti "./media/responsiveTask1.PNG"
+    2) Pabandyti atkartoti "./media/responsiveTask3.PNG"
+    3) Pabandyti atkartoti "./media/responsiveDesign1.PNG"

@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+.test1{
+  margin: 0 auto;
+  width: 80%;
+  height: 300px;
+
+  background-color: #6cccac;
+}
+
+/* minimalus ekrano plotis reikalingas taikyti šitą media query yra 600px */
+@media (min-width: 600px){
+  .test1{
+    background-color: #b67fea;
+  }
+}
+
+@media (min-width: 800px){
+  .test1{
+    background-color: #cc9c6c;
+    border: 5px dashed purple;
+  }
+}
+
+.task2{
+  height: 100vh;
+  width: 100%;
+  border: solid 10px grey;
+
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: 1fr 7fr 3fr 1fr;
+
+  > div{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  > .header{
+    background-color: #006eff;
+  }
+  > .main{
+    background-color: #2ec326;
+  }
+  > .widget{
+    background-color: #c145c1;
+  }
+  > .footer{
+    background-color: #1100ff;
+  }
+}
+
+@media (min-width: 768px){
+  .task2{
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 8fr 3fr 1fr;
+
+    > .header{
+      grid-row: span 3;
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .task2{
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 11fr 1fr;
+
+    > .header{
+      grid-row: span 2;
+    }
+    > .widget{
+      grid-column-start: 3;
+      grid-row: span 2;
+      /* grid-area: 1 / 3 / 3 / 4; */
+    }
+  }
+}
