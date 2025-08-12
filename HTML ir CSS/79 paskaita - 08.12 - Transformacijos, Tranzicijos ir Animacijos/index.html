@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>79 paskaita - Transformacijos, Tranzicijos ir Animacijos</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Transformacijos -->
+      <h2>Transformacijos</h2>
+      <p>
+        Transformacijos - transform stilius yra skirtas nusakyti elementų transformavimosi variantus. Transform stiliui galime priskirti nuo 1 iki 3-4 nustatymų.
+      </p>
+      <ul>
+        <li>rotate(Z) - sukasi aplink Z ašį</li>
+        <li>rotateZ(Z) - sukasi aplink Z ašį</li>
+        <li>rotateX(X) - sukasi aplink X ašį</li>
+        <li>rotateY(Y) - sukasi aplink Y ašį</li>
+        <li>scale(X, Y) - keičia elemento dydį X ir Y ašyse</li>
+        <li>scaleX(X) - keičia elemento dydį X ašyje</li>
+        <li>scaleY(Y) - keičia elemento dydį Y ašyje</li>
+        <li>translate(__px) - pajudina elementa X ir Y ašyje į šonus ir viršų/apačią</li>
+        <li>translateX(__px) - pajudina elementa X ašyje į šonus</li>
+        <li>translateY(__px) - pajudina elementa Y ašyje į viršų/apačią</li>
+        <li>skew(X, Y)</li>
+        <li>skewX(X)</li>
+        <li>skewY(Y)</li>
+      </ul>
+      <div class="transformContainer">
+        <div class="rotate">Rotate</div>
+        <div class="scale">Scale</div>
+        <div class="translate">Translate</div>
+        <div class="combination">Combination</div>
+      </div>
+      <h3>Transform-origin</h3>
+      <p>
+        Transform-origin - transformacijos pradmenys nusako nuo kurios elemento vietos prasidės transformacija. (default - centras)
+      </p>
+    </section>
+    <section> <!-- Tranzicijos -->
+      <h2>Tranzicijos</h2>
+      <p>
+        Transition - tranzicija - kontroliuoja kaip vyksta elemento perėjimas iš vienos būsenos į kitą.<br>
+        Šitą veiksmą galima kontroliuoti įvairiais nustatymais:
+      </p>
+      <ul>
+        <li>transition-duration: seconds;</li>
+        <li>transition-timing-function: timing-function;</li>
+        <li>transition-delay: seconds;</li>
+        <li>transition-property: property;</li>
+        <li>transition: duration delay ...;</li>
+      </ul>
+      <div class="transition">Transition</div>
+    </section>
+    <section> <!-- Animacijos -->
+      <h2>Animacijos</h2>
+      <p>
+        Animacija nuo tranzicijos skiriasi tuo, kad animacijai pradėti nėra reikalingas vartotojo veiksmas, animacija gali turėti kiek tik nori žingsių (tranzicija tik vieną) ir animacija gali vykti betkokį kiekį kartų.
+      </p>
+      <p>
+        Animacija kaip ir tranzicija gali turėti įvairius nustatymus, kurie kontroliuoja kaip animacija yra vykdoma:
+      </p>
+      <ul>
+        <li>animation-duration</li>
+        <li>animation-delay</li>
+        <li>animation-name</li>
+        <li>animation-timing-function</li>
+        <li>animation-iteration-count</li>
+        <li>animation-direction</li>
+        <li>animation-play-state</li>
+        <li>animation-fill-mode</li>
+        <li>animation-composition</li>
+        <li>animation-range</li>
+        <li>animation-range-start</li>
+        <li>animation-range-end</li>
+        <li>animation-timeline</li>
+        <li>animation: duration delay ...;</li>
+      </ul>
+      <h3>Keyframes</h3>
+      <p>
+        Keyframes viduje aprašome animacijos žingsnius. Ties kuriuo animacijos momentu, kurioje vietoje ir/ar kaip atrodantis elementas turi būti. (kokie stiliai pritaikomi iki nurodyto laiko animacijoje)<br>
+        @keyframes animationName { 0%{...stiliai...} x%{...stiliai...} 100%{...stiliai...} }
+      </p>
+      <div class="animation">Animation</div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

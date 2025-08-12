@@ -1,0 +1,103 @@
+body{
+  height: 300vh;
+}
+
+.transformContainer{
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+
+  border: 1px dashed black;
+  overflow: hidden;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  > div{
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+    font-size: 2em;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+  }
+
+  > .rotate{
+    transform: rotate(30deg);
+  }
+  > .scale{
+    transform: scale(1.5);
+  }
+  > .translate{
+    transform: translate(100px, 50px);
+  }
+  > .combination{
+    transform: scale(0.75) translate(30px, 50px) rotate(135deg);
+  }
+}
+
+
+.transition{
+  width: 300px;
+  height: 100px;
+  font-size: 2em;
+  color: red;
+  background-color: antiquewhite;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* transition-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53); */
+  /* transition-duration: 5s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  transition-property: width; */
+  transition: 5s 1s linear width;
+  
+  &:hover{
+    width: 500px;
+    background-color: #53ad41;
+  }
+}
+
+.animation{
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5em;
+  background-color: aqua;
+
+  animation: manoPirmojiAnimacija 3s linear alternate infinite;
+}
+
+@keyframes manoPirmojiAnimacija{
+  from{
+    background-color: aqua;
+    transform: translateY(0);
+  }
+  5%{
+    background-color: aqua;
+    transform: translateY(-20px);    
+  }
+  10%{
+    background-color: aqua;
+    transform: translateY(0px);    
+  }
+  90%{
+    background-color: rgb(0, 255, 47);
+    transform: translateY(200px);
+  }
+  95%{
+    background-color: rgb(0, 255, 47);
+    transform: translateY(220px);
+  }
+  to{
+    background-color: rgb(0, 255, 47);
+    transform: translateY(200px);
+  }
+}
