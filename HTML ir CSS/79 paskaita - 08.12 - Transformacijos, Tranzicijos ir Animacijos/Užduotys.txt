@@ -1,0 +1,19 @@
+CAO:
+  Skaityti:
+    Pamoka 16 Animacijos ir perėjimai
+  Daryti:
+    Pamoka 16 Animacijos ir perėjimai
+
+Rokas:
+  1) Sukurti mygtuką, ant kurio užėjus su pele(kursoriumi), per labai mažą laiko tarpą pasikeistų jo fono ir teksto spalva (gal vos vos padidėtų).
+  2) Padaryti elemento levitavimo efektą (kiltų aukštyn -> leistūsi žėmyn ir pastoviai kartotųsi) su animacija.
+  extra 3) Atkartoti CSS Diner esantį elementų vingiavimą su animacija.
+
+Video:
+  https://youtu.be/CG__N4SS1Fc
+  https://youtu.be/2B5rbsOoIUE
+
+Extra:
+  https://freefrontend.com/css-animations//
+  https://prismic.io/blog/css-hover-effects
+  https://freefrontend.com/css-card-hover-effects/
