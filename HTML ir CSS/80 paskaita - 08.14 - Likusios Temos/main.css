@@ -1,0 +1,16 @@
+section {
+  padding: 20px 5vw;
+}
+section > h2 {
+  -webkit-text-decoration: dashed underline #ff00e1 3px;
+          text-decoration: dashed underline #ff00e1 3px;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  color: #2c00cc;
+}
+
+p {
+  color: #2c00cc;
+}/*# sourceMappingURL=main.css.map */

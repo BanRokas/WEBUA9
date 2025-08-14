@@ -1,0 +1,19 @@
+$base-color: #3700ff;
+$base-color-dark: darken($base-color, 10%);
+$base-color-light: lighten($base-color, 10%);
+
+section{
+  padding: 20px 5vw;
+  > h2{
+    text-decoration: dashed underline #ff00e1 3px;
+  }
+}
+
+h2, h3, h4{
+  text-align: center;
+  color: $base-color-dark;
+}
+
+p{
+  color: $base-color-dark;
+}
