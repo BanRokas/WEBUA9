@@ -1,0 +1,14 @@
+CAO:
+  Praleisti:
+    Pamoka 18 Praktika
+  Skaityti/Žiūrėti:
+    Pamoka 17 Puslapio prieinamumas (angl. accessibility)
+    Pamoka 19 CSS Frameworks
+    Pamoka 20 CSS Preprocessors
+  Daryti:
+    Pamoka 19 CSS Frameworks
+    ? Pamoka 20 CSS Preprocessors
+
+Rokas:
+  Pažaisti su biblioteka/omis, pabandyti pakurti įvairių komponentų (elementų) su biblioteka/omis.
+  Pamėginti atlikti kokią nors vieną ar kelias iš senesnių užduočių naudojant SCSS.
